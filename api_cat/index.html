@@ -5,8 +5,16 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Gatitos Aleatorios con API</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <style>
+
+        body{
+            background-color: aliceblue;
+            text-align:justify;
+        }
+        img{
+            border-radius: 5px;
+            border: 10px black;
+        }
         .but{
             background-color: green;
             height: 30px;
@@ -18,12 +26,35 @@
     
 </head>
 <body>
-    <h1>Gatitos Aleatorios</h1>
+    <h1>Michis App</h1>
+
+    <span id="michisError"> </span>
+
+    <section id="randomMichis">
+        <h2>Michis Aleatorios</h2>
+
+        <article>
+            <img id="img1" width="350" height="350" alt="Fotos gatos aleatorias">
+            <button class="but" onclick="saveFavoriteMichis()">Guardar Michi en Favoritos</button>
+        </article>
+
+        <article>
+            <img id="img2" width="350" height="350" alt="Fotos gatos aleatorias">
+            <button class="but" onclick="saveFavoriteMichis()">Guardar Michi en Favoritos</button>
+        </article>
+
+        <button class="but"  onclick="loadRandomMichis()">Recargar</button>
+    </section>
+
+    <section id="favoritesMichis">
+        <h2>Michis Favoritos</h2>
+        <article>
+            <img id="img1" width="350" height="350" alt="Fotos gatos aleatorias">
+            <button class="but" >Sacar Michi en Favoritos</button>
+        </article>
+    </section>
     
-    <img id="img1" width="500" alt="Fotos gatos aleatorias">
-    <img id="img2" width="500" alt="Fotos gatos aleatorias">
-    <img id="img3" width="500" alt="Fotos gatos aleatorias">
-    <button class="but"  onclick="reload()">Recargar</button>
+
     <script src='./main.js'> </script>
 </body>
 </html>
